@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background:linear-gradient(to bottom, #f7f6f0, #fffa97);;
+
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    overflow-x: hidden; 
+  }
+  .centered-logo {
+    margin-top: 2px;
+    text-align: center;
+  }
+  .centered-logo img{
+    height: 100px;
+  }
+  .left{
+    display: flex;
+    width: 80%
+  }
+  .left-image{
+    width: 40%;
+    align-items: center;
+  }
+  .image{
+    height: 600px;
+  }
+   .right-image {
+    width: 90%;
+    height: 90%;
+    margin-left: 20px;
+  }
+  img{
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .bottom-image {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .bottom-image p{
+    font-size: 98%;
+    margin-left: 10px;
+    text-align: left;
+  }
+  .bottom-image img{
+    width: 75%;
+    text-align: center;
+    justify-content: center;
+
+  }
+  .horizontal-line {
+    border-top: 2px solid rgb(246, 68, 68); /* You can adjust the color, thickness, and style */
+      width: 98%;
+  }
+  .industry-list{
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    text-align: center; 
+  }
+.industry-list li {
+    display: inline;
+    text-align: center;
+  }
+  .industry-list li:not(:last-child)::after {
+    content: " | ";
+    color: rgb(246, 68, 68);
+  }
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    padding: 30px;
+    background-color: rgb(246, 68, 68);
+  }
+  .contact-icons a {
+    color: aliceblue;
+    text-decoration: none;
+    width: 25%;
+    padding: 0 130px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    .left-image img,
+    .right-image img,
+    .bottom-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h5 {
+      font-size: 1.5rem;
+    }
+    .industry-list li {
+      margin: 5px 0;
+    }
+  }
